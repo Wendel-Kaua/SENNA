@@ -1,147 +1,249 @@
 /* Reset e Estilos Globais */
 * {
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o padding padrão */
-    box-sizing: border-box; /* Ajusta o modelo de box para incluir padding e borda na largura e altura */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o padding padrão */
+    box-sizing: border-box;
+    /* Ajusta o modelo de box para incluir padding e borda na largura e altura */
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do corpo */
-    line-height: 1.6; /* Define o espaçamento entre linhas */
-    color: #333; /* Cor do texto */
-    background-color: lightgray; /* Cor de fundo da página */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Define a fonte do corpo */
+    line-height: 1.6;
+    /* Define o espaçamento entre linhas */
+    color: #333;
+    /* Cor do texto */
+    background-color: lightgray;
+    /* Cor de fundo da página */
 }
 
 /* Container centralizado */
 .container {
-    width: 90%; /* Largura da área da página */
-    max-width: 1200px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza a área */
+    width: 90%;
+    /* Largura da área da página */
+    max-width: 1200px;
+    /* Largura máxima */
+    margin: 0 auto;
+    /* Centraliza a área */
 }
 
 /* Cabeçalho fixo no topo */
 .header {
-    background-color: #1e1e1e; /* Cor de fundo do cabeçalho */
-    padding: 20px 0; /* Espaçamento interno (cima e baixo) */
-    position: sticky; /* Fixar no topo */
-    top: 0; /* Fica fixo no topo da página */
-    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
-    display: flex; /* Flexbox para organizar os elementos */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    height: 126px; /* Altura do cabeçalho */
+    background-color: #1e1e1e;
+    /* Cor de fundo do cabeçalho */
+    padding: 20px 0;
+    /* Espaçamento interno (cima e baixo) */
+    position: sticky;
+    /* Fixar no topo */
+    top: 0;
+    /* Fica fixo no topo da página */
+    z-index: 1000;
+    /* Garante que o cabeçalho fique sobre outros elementos */
+    display: flex;
+    /* Flexbox para organizar os elementos */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    height: 126px;
+    /* Altura do cabeçalho */
 }
 
 /* Menu de Navegação */
 .nav {
-    display: flex; /* Define um contêiner flexível */
-    flex-direction: row; /* Organiza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 20px; /* Espaço entre os itens */
-    padding: 10px 0; /* Espaçamento interno (cima e baixo) */
+    display: flex;
+    /* Define um contêiner flexível */
+    flex-direction: row;
+    /* Organiza os itens horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    gap: 20px;
+    /* Espaço entre os itens */
+    padding: 10px 0;
+    /* Espaçamento interno (cima e baixo) */
 }
 
 .nav ul {
-    list-style: none; /* Remove os marcadores da lista */
-    margin: 0; /* Remove as margens externas */
-    padding: 0; /* Remove o padding */
-    display: flex; /* Faz a lista usar o modelo flex */
+    list-style: none;
+    /* Remove os marcadores da lista */
+    margin: 0;
+    /* Remove as margens externas */
+    padding: 0;
+    /* Remove o padding */
+    display: flex;
+    /* Faz a lista usar o modelo flex */
 }
 
 .nav ul li {
-    margin: 0; /* Remove as margens extras */
+    margin: 0;
+    /* Remove as margens extras */
 }
 
 .nav ul li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #fff; /* Cor do texto dos links */
-    font-size: 18px; /* Tamanho da fonte dos links */
-    font-weight: bold; /* Deixa o texto em negrito */
-    padding: 10px 20px; /* Espaçamento interno (cima/baixo, esquerda/direita) */
-    border-radius: 5px; /* Borda arredondada nos links */
-    transition: background-color 0.3s, color 0.3s; /* Efeito suave de transição nas cores */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: #fff;
+    /* Cor do texto dos links */
+    font-size: 18px;
+    /* Tamanho da fonte dos links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    padding: 10px 20px;
+    /* Espaçamento interno (cima/baixo, esquerda/direita) */
+    border-radius: 5px;
+    /* Borda arredondada nos links */
+    transition: background-color 0.3s, color 0.3s;
+    /* Efeito suave de transição nas cores */
 }
 
 /* Efeito de hover nos links */
 .nav ul li a:hover {
-    background-color: #f4d03f; /* Cor de fundo amarela quando o mouse passar sobre o link */
-    color: #1e1e1e; /* Cor do texto ao passar o mouse */
-}
-
-/* Logo no canto superior direito */
-.top-right-logo {
-    position: fixed; /* Fixar a logo na tela */
-    top: 10px; /* Distância do topo da tela */
-    right: 93%; /* Distância da direita da tela */
-    width: 80px; /* Largura da logo */
-    height: auto; /* Altura automática, proporcional à largura */
-    z-index: 1000; /* Garante que a logo fique sobre outros elementos */
-    border-radius: 15%; /* Torna a logo arredondada */
+    background-color: #f4d03f;
+    /* Cor de fundo amarela quando o mouse passar sobre o link */
+    color: #1e1e1e;
+    /* Cor do texto ao passar o mouse */
 }
 
 /* Seção de Introdução */
-.intro {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./fundo.jpg') no-repeat center/cover; /* Fundo com gradiente e imagem */
-    height: 60vh; /* Altura da seção (60% da altura da janela) */
+.pg1 .intro {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/fundo1.jpg') no-repeat center/cover;
+    /* Fundo com gradiente e imagem */
+    height: 93vh;
+    /* Altura da seção (60% da altura da janela) */
+    display: flex;
+    /* Flexbox para organizar os itens dentro */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    color: white;
+    /* Cor do texto */
+}
+.pg2 .intro {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/Fundo2.jpg') no-repeat center/cover; /* Fundo com gradiente e imagem */
+    height: 93vh; /* Altura da seção (60% da altura da janela) */
     display: flex; /* Flexbox para organizar os itens dentro */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     text-align: center; /* Centraliza o texto */
     color: white; /* Cor do texto */
+    
+}
+
+.pg3 .intro {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/fundo3.jpg') no-repeat center/cover; /* Fundo com gradiente e imagem */
+    height: 93vh; /* Altura da seção (60% da altura da janela) */
+    display: flex; /* Flexbox para organizar os itens dentro */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    
+}
+
+.pg4 .intro {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/fundo4.jpg') no-repeat center/cover; /* Fundo com gradiente e imagem */
+    height: 93vh; /* Altura da seção (60% da altura da janela) */
+    display: flex; /* Flexbox para organizar os itens dentro */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    
+}
+.pg5 .intro {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/fundo4.jpg') no-repeat center/cover; /* Fundo com gradiente e imagem */
+    height: 93vh; /* Altura da seção (60% da altura da janela) */
+    display: flex; /* Flexbox para organizar os itens dentro */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    
 }
 
 .intro h1 {
-    font-size: 3.5rem; /* Tamanho da fonte do título */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+    font-size: 3.5rem;
+    /* Tamanho da fonte do título */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do título */
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculas */
+    letter-spacing: 2px;
+    /* Aumenta o espaçamento entre as letras */
 }
 
 .intro p {
-    font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
-    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+    font-size: 1.2rem;
+    /* Tamanho da fonte do parágrafo */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do parágrafo */
 }
 
 /* Seções de Conteúdo */
 .section {
-    padding: 60px 20px; /* Espaçamento interno (cima/baixo, esquerda/direita) */
-    text-align: center; /* Alinha o texto ao centro */
+    padding: 60px 20px;
+    /* Espaçamento interno (cima/baixo, esquerda/direita) */
+    text-align: center;
+    /* Alinha o texto ao centro */
 }
 
 .section h2 {
-    font-size: 2.5rem; /* Tamanho da fonte do título */
-    color: #333; /* Cor do título */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-size: 2.5rem;
+    /* Tamanho da fonte do título */
+    color: #333;
+    /* Cor do título */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do título */
 }
 
 .section p {
-    font-size: 1rem; /* Tamanho da fonte do parágrafo */
-    color: #666; /* Cor do texto do parágrafo */
-    line-height: 1.8; /* Espaçamento entre as linhas do parágrafo */
+    font-size: 1rem;
+    /* Tamanho da fonte do parágrafo */
+    color: #666;
+    /* Cor do texto do parágrafo */
+    line-height: 1.8;
+    /* Espaçamento entre as linhas do parágrafo */
 }
 
 /* Estilo para o Rodapé */
 .bg-light {
-    background-color: #fafafa; /* Cor de fundo do rodapé */
-    font-size: 1rem; /* Tamanho da fonte */
-    color: #666; /* Cor do texto */
-    line-height: 1.8; /* Espaçamento entre as linhas do texto */
-    text-align: center; /* Alinha o texto ao centro */
+    background-color: #fafafa;
+    /* Cor de fundo do rodapé */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    color: #666;
+    /* Cor do texto */
+    line-height: 1.8;
+    /* Espaçamento entre as linhas do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
 }
 
 /* Rodapé */
 .footer {
-    background-color: #333; /* Cor de fundo do rodapé */
-    color: white; /* Cor do texto */
-    padding: 20px 0; /* Espaçamento interno (cima e baixo) */
-    text-align: center; /* Alinha o texto ao centro */
-    font-size: 0.9rem; /* Tamanho da fonte */
+    background-color: #333;
+    /* Cor de fundo do rodapé */
+    color: white;
+    /* Cor do texto */
+    padding: 20px 0;
+    /* Espaçamento interno (cima e baixo) */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    font-size: 0.9rem;
+    /* Tamanho da fonte */
 }
 
 .footer a {
-    color: #ffdd57; /* Cor do texto do link */
-    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ffdd57;
+    /* Cor do texto do link */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
