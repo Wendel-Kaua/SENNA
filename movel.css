@@ -1,0 +1,132 @@
+/* Estilos globais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: lightgray;
+}
+
+/* Cabeçalho fixo no topo */
+.header {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    height: 126px;
+}
+
+/* Menu de Navegação */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #f4d03f;
+    color: #1e1e1e;
+}
+
+/* Logo no canto superior direito */
+.top-right-logo {
+    position: fixed;
+    top: 10px;
+    right: 93%;
+    width: 80px;
+    height: auto;
+    z-index: 1000;
+    border-radius: 15%;
+}
+
+/* Seções de Conteúdo */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    /* Ajuste do menu de navegação */
+    .nav {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        gap: 10px; /* Menor espaço entre os itens */
+    }
+
+    /* Ajuste da logo */
+    .top-right-logo {
+        top: 15px;
+        right: 50%;
+        transform: translateX(50%); /* Centraliza a logo */
+        width: 60px;
+    }
+
+    /* Ajuste do cabeçalho */
+    .header {
+        padding: 10px 0;
+        height: auto;
+    }
+
+    /* Ajuste das seções */
+    .section {
+        padding: 40px 10px; /* Menos espaço nas laterais */
+    }
+
+    .section h2 {
+        font-size: 2rem; /* Tamanho menor do título */
+    }
+
+    .section p {
+        font-size: 0.9rem; /* Tamanho menor do parágrafo */
+    }
+}
+
+/* Estilos para telas menores (dispositivos muito pequenos, como celulares antigos) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Tamanho da fonte ajustado para telas pequenas */
+    }
+
+    .nav ul li a {
+        font-size: 16px; /* Tamanho de fonte menor para os links */
+        padding: 8px 15px; /* Menos espaçamento interno nos links */
+    }
+
+    .intro h1 {
+        font-size: 2rem; /* Menor tamanho para o título na introdução */
+    }
+
+    .intro p {
+        font-size: 1rem; /* Tamanho menor para o parágrafo na introdução */
+    }
+}
