@@ -48,13 +48,7 @@ body {
 
 /* Logo no canto superior direito */
 .top-right-logo {
-    position: fixed;
-    top: 10px;
-    right: auto;
-    width: 40px;
-    height: auto;
-    z-index: 1000;
-    border-radius: 15%;
+display: none;
 }
 
 /* Seções de Conteúdo */
