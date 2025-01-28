@@ -1,3 +1,10 @@
+@media screen and (max-width: 360px) { /* Ajuste para telas menores */
+    .header {
+        height: 65px; /* Defina altura consistente */
+        padding: 0 10px; /* Ajuste o padding para não sair da tela */
+    }
+}
+
 /* Estilos globais */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -6,16 +13,33 @@ body {
     background-color: lightgray;
 }
 
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Impede que o cabeçalho seja comprimido */
+}
+
 /* Cabeçalho fixo no topo */
 .header {
     background-color: #1e1e1e;
     padding: 13px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     display: flex;
     justify-content: center;
     height: 67px;
+}
+
+.header {
+    overflow: hidden; /* Evita que o conteúdo do cabeçalho saia da tela */
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
 }
 
 /* Menu de Navegação */
