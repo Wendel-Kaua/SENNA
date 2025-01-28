@@ -29,26 +29,16 @@ body {
     /* Centraliza a área */
 }
 
-/* Cabeçalho fixo no topo */
 .header {
     background-color: #1e1e1e;
-    /* Cor de fundo do cabeçalho */
     padding: 20px 0;
-    /* Espaçamento interno (cima e baixo) */
     position: sticky;
-    /* Fixar no topo */
     top: 0;
-    /* Fica fixo no topo da página */
     z-index: 1000;
-    /* Garante que o cabeçalho fique sobre outros elementos */
     display: flex;
-    /* Flexbox para organizar os elementos */
     justify-content: center;
-    /* Centraliza os itens horizontalmente */
-    height: 126px;
-    /* Altura do cabeçalho */
+    height: 65px; /* Alterado para 65px */
 }
-
 /* Menu de Navegação */
 .nav {
     display: flex;
@@ -57,9 +47,9 @@ body {
     /* Organiza os itens horizontalmente */
     justify-content: center;
     /* Centraliza os itens horizontalmente */
-    gap: 20px;
+    gap: 10px;
     /* Espaço entre os itens */
-    padding: 10px 0;
+    padding: 2px 0;
     /* Espaçamento interno (cima e baixo) */
 }
 
